@@ -66,8 +66,9 @@ h1 {
     position: fixed;
     right: 0px;
     top: 0px;
-    width: 100%;
-    background: url(../images/templatemo_menubg.png);
+    width: 80%;
+    /* NAV_BAR */
+   /* background: url(../images/templatemo_menubg.png); */
     height: 70px;
     z-index: 500;
 }
@@ -110,7 +111,7 @@ h1 {
 .templatemmo_subheader {
     float: left;
     font-size: 16px;
-    color: #6d950c;
+    color: #822380;
     font-weight: bold;
 }
 
@@ -130,7 +131,7 @@ h1 {
 }
 
 .templatemo_separater {
-    background: url(../images/templatemo_separateline.png) no-repeat;
+    /*background: url(../images/templatemo_separateline.png) no-repeat;*/
     background-position: right;
     height: 40px;
     font-size: 20px;
@@ -167,6 +168,18 @@ h1 {
 .templatemo_service_frame img {
     width: 100%;
 }
+
+
+/* DRFOST CHANGES
+
+
+
+*/
+#dfrost_logo_column
+{
+    background-color: WHITE;
+}
+
 
 .templatemo_service_title {
     width: 100%;
@@ -398,7 +411,7 @@ h1 {
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    background: #699206;
+    background: #822380;
     color: #ccff00;
 }
 
@@ -698,7 +711,7 @@ h1 {
         -o-transform: skew(-45deg);
         -moz-transform: skew(-45deg);
         -webkit-transform: skew(-45deg);
-        color:#822380;
+        color:#FFFFFF;
     }
 }
 
