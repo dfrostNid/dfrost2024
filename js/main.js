@@ -1,137 +1,71 @@
+$(window).load(function () {
+  $(".preloader").fadeOut("slow");
+});
 
-(function(html) {
+/* =Main INIT Function
+-------------------------------------------------------------- */
+function initializeSite() {
+  "use strict";
 
-    'use strict';
+  //OUTLINE DIMENSION AND CENTER
+  (function () {
+    function centerInit() {
+      var sphereContent = $(".sphere"),
+        sphereHeight = sphereContent.height(),
+        parentHeight = $(window).height(),
+        topMargin = (parentHeight - sphereHeight) / 2;
 
-    const cfg = {
+      sphereContent.css({
+        "margin-top": topMargin + "px",
+      });
 
-        // Countdown Timer Final Date
-        finalDate : 'February 20, 2024 00:00:00',
-        // MailChimp URL
-        mailChimpURL : 'https://facebook.us1.list-manage.com/subscribe/post?u=1abf75f6981256963a47d197a&amp;id=37c6d8f4d6' 
+      var heroContent = $(".hero"),
+        heroHeight = heroContent.height(),
+        heroTopMargin = (parentHeight - heroHeight) / 2;
 
-    };
+      heroContent.css({
+        "margin-top": heroTopMargin + "px",
+      });
+    }
 
+    $(document).ready(centerInit);
+    $(window).resize(centerInit);
+  })();
 
-   /* Preloader
-    * -------------------------------------------------- */
-    const ssPreloader = function() {
+  // Init effect
+  $("#scene").parallax();
+}
+/* END ------------------------------------------------------- */
 
-        const body = document.querySelector('body');
-        const preloader = document.querySelector('#preloader');
-        const info = document.querySelector('.s-info');
+/* =Document Ready Trigger
+-------------------------------------------------------------- */
+$(window).load(function () {
+  initializeSite();
+  (function () {
+    setTimeout(function () {
+      window.scrollTo(0, 0);
+    }, 0);
+  })();
+});
+/* END ------------------------------------------------------- */
 
-        if (!(preloader && info)) return;
-
-        html.classList.add('ss-preload');
-
-        window.addEventListener('load', function() {
-
-            html.classList.remove('ss-preload');
-            html.classList.add('ss-loaded');
-
-            // page scroll position to top
-            preloader.addEventListener('transitionstart', function gotoTop(e) {
-                if (e.target.matches('#preloader')) {
-                    window.scrollTo(0, 0);
-                    preloader.removeEventListener(e.type, gotoTop);
-                }
-            });
-
-            preloader.addEventListener('transitionend', function afterTransition(e) {
-                if (e.target.matches('#preloader'))  {
-                    body.classList.add('ss-show');
-                    e.target.style.display = 'none';
-                    preloader.removeEventListener(e.type, afterTransition);
-                }
-            });
-
-        });
-
-        window.addEventListener('beforeunload' , function() {
-            body.classList.remove('ss-show');
-        });
-    };
-
-
-   /* Countdown Timer
-    * ------------------------------------------------------ */
-    const ssCountdown = function () {
-
-        const finalDate = new Date(cfg.finalDate).getTime();
-        const daysSpan = document.querySelector('.counter .ss-days');
-        const hoursSpan = document.querySelector('.counter .ss-hours');
-        const minutesSpan = document.querySelector('.counter .ss-minutes');
-        const secondsSpan = document.querySelector('.counter .ss-seconds');
-        let timeInterval;
-
-        if (!(daysSpan && hoursSpan && minutesSpan && secondsSpan)) return;
-
-        function timer() {
-
-            const now = new Date().getTime();
-            let diff = finalDate - now;
-
-            if (diff <= 0) {
-                if (timeInterval) { 
-                    clearInterval(timeInterval);
-                }
-                return;
-            }
-
-            let days = Math.floor( diff/(1000*60*60*24) );
-            let hours = Math.floor( (diff/(1000*60*60)) % 24 );
-            let minutes = Math.floor( (diff/1000/60) % 60 );
-            let seconds = Math.floor( (diff/1000) % 60 );
-
-            if (days <= 99) {
-                if (days <= 9) {
-                    days = '00' + days;
-                } else { 
-                    days = '0' + days;
-                }
-            }
-
-            hours <= 9 ? hours = '0' + hours : hours;
-            minutes <= 9 ? minutes = '0' + minutes : minutes;
-            seconds <= 9 ? seconds = '0' + seconds : seconds;
-
-            daysSpan.textContent = days;
-            hoursSpan.textContent = hours;
-            minutesSpan.textContent = minutes;
-            secondsSpan.textContent = seconds;
-
-        }
-
-        timer();
-        timeInterval = setInterval(timer, 1000);
-    };
-
-
-   /* Swiper
-    * ------------------------------------------------------ */ 
-    const ssSwiper = function() {
-
-        const mySwiper = new Swiper('.swiper-container', {
-
-            slidesPerView: 1,
-            effect: 'fade',
-            speed: 2000,
-            autoplay: {
-                delay: 5000,
-            }
-
-        });
-    };
-    (function ssInit() {
-
-        ssPreloader();
-        ssCountdown();
-        ssSwiper();
-        ssMailChimpForm();
-        sstabs();
-        ssAlertBoxes();
-        ssMoveTo();
-
-    })();
-})(document.documentElement);
+$("#countdown").countdown({
+  date: "Feb 8, 2024",
+  render: function (data) {
+    var el = $(this.el);
+    el.empty()
+      //.append("<div>" + this.leadingZeros(data.years, 4) + "<span>years</span></div>")
+      .append(
+        "<div>" + this.leadingZeros(data.days, 2) + " <span>days</span></div>"
+      )
+      .append(
+        "<div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div>"
+      )
+      .append(
+        "<div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div>"
+      )
+      .append(
+        "<div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>"
+      );
+  },
+});
