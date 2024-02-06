@@ -80,12 +80,14 @@ h2 {
 	line-height: 50px;
 	letter-spacing: initial;
 	font-weight: 100;
+	
 	text-transform: uppercase;
 }
 
 #countdown div {
 	display:inline-block;
     margin: 0 34px;
+	letter-spacing: 0.3px;
 }
 
 .sub-title {
@@ -420,7 +422,7 @@ width: 40%;
 
 
 /* Landscape Phone */
-@media all and (min-width: 400px) {
+@media all and (min-width: 480px) {
 	/* HERO */
 	h1 { font-size: 40px; line-height: 40px; }
 	#countdown div span {font-size: 24px; line-height: 34px;}
@@ -439,12 +441,12 @@ width: 40%;
 	.depth-5 {
 		position: absolute;
 		right: -50%;
-		top: -50%;
+		top: -10%;
 	}
 
 	.depth-4 {
 		left: -4%;
-		top: 20%;
+		top: -10%;
 	 }
 
 	.depth-3.flake1 {
@@ -482,7 +484,7 @@ width: 40%;
 	.depth-1.flake2 { 
 		position: absolute;
 		right: 40%;
-		top: 40%;
+		top: 10%;
 	}
 
 	.depth-1.flake3 { 
