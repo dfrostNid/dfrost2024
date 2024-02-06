@@ -68,7 +68,7 @@ h1 {
     top: 0px;
     width: 80%;
     /* NAV_BAR */
-    background: url(../images/nav_final.png); 
+    background: url(../images/dfrost_nav.png); 
     height: 70px;
     z-index: 500;
 }
@@ -181,11 +181,24 @@ h1 {
 }
 
 /*DFROST CHANGESSSSSS MAKING TEXT IN CENTER */
+.dfrost_image{
+    position:relative;
+    right:-1000px;
+    
+}
+
+
 .dfrost_text{
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
     position:absolute;
-    right:200px;
+    left:200px;
+}
+
+.dfrost_logo_div {
+    
+    width: 100%;
+    text-align: left;
 }
 
 
