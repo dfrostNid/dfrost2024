@@ -62,10 +62,10 @@ $("#countdown").countdown({
         "<div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div>"
       )
       .append(
-        "<div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div>"
+        "<div>" + this.leadingZeros(data.min, 2) + " <span>mins</span></div>"
       )
       .append(
-        "<div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>"
+        "<div>" + this.leadingZeros(data.sec, 2) + " <span>secs</span></div>"
       );
   },
 });
