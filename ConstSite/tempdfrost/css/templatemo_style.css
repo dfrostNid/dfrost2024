@@ -15,7 +15,7 @@ body {
     -webkit-font-smoothing: antialiased;
  /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
-    background: #282828;
+    background: #ffffff;
 }
 
 a, a:hover, a:focus {
@@ -744,7 +744,7 @@ h1 {
         -o-transform: skew(-45deg);
         -moz-transform: skew(-45deg);
         -webkit-transform: skew(-45deg);
-        color:#06327d;
+        color:#2FEBED;
     }
 }
 

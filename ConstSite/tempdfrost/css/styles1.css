@@ -3245,7 +3245,16 @@ img.u-pull-left {
     transition-delay : .9s;
     bottom           : 0;
 }
+div{ 
+    .fortest{
+        width :50%; 
+        height:400px; 
+        border : 1px solid black; 
+        margin: 2rem 0;
 
+    }
+   
+    } 
 /* ------------------------------------------------------------------- 
  * responsive:
  * intro
