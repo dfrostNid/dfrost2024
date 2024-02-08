@@ -506,12 +506,12 @@ a, a:hover, a:focus {
 }
 
 @media (min-width: 340px) and (max-width:767px) {
-    /* .templatemo_menu{
+    .templatemo_menu{
        
         background: url(../images/navphone.png); 
        
 
-    } */
+    }
 }
 
 @media (min-width: 360px) and (max-width:640px) {
