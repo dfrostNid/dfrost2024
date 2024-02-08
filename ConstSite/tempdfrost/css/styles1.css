@@ -304,9 +304,7 @@ sup {
     top : -0.5em;
 }
 
-img {
-    border-style : none;
-}
+
 
 button,
 input,
@@ -3761,3 +3759,272 @@ div{
         width  : 4.8rem;
     }
 }
+/* for contact page */
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  
+  
+  body, button, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  
+
+  
+  .container {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .screen {
+  
+    background: #9BADCB;
+    border-radius: 15px;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  
+
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #A50588;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background: #A50588;
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #9BADCB;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #A50588;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: #A50588;
+  }
+  
+  
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+    .container {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+      }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+    .container {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+      }
+  }
+  /* contact page end */
+  /* for schedules */
+  *{
+    box-sizing: border-box;
+  }
+  
+  
+  img{
+    width: 100%;
+    border-radius: 5px;
+    @media screen and (max-width: 599px){
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+  
+  
+  .timeline{
+    padding: 2rem;
+    max-width: 1400px;
+    margin: auto;
+  
+  }
+  
+  
+  .grid-wrapper{
+  
+   
+    @media screen and (min-width: 600px){
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 1rem;
+     
+    }
+  
+    @media screen and (min-width: 1025px){
+      grid-template-columns: 1fr 2fr 1fr 2fr;
+    }
+    @media screen and (min-width: 600px) and (max-width: 1024px){
+      grid-template-columns: 1fr 2fr;
+    }
+  
+  }
+  
+  article{
+    p{
+      font-family: 'Karla', sans-serif;
+      font-size: 0.95rem;
+      color: #c8c8c8;
+    }
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #59EFF1;
+  
+  
+   
+  
+    &:nth-child(4){
+      grid-area: 1/2/4/3;   
+    }
+  
+    &:nth-child(8){
+      @media screen and (min-width: 1025px){
+        grid-area: 1/4/4/-1;
+      }
+      @media screen and (min-width: 600px) and (max-width: 1024px){
+        grid-area: 4/2/8/3;
+      }
+    }
+  
+    &:nth-child(4n+3){
+      @media screen and (min-width: 1025px){
+        border-bottom: 0;
+      }   
+    }
+    &:nth-child(4){
+      @media screen and (min-width: 1025px){
+        border-right: 1px solid #59EFF1;
+        padding-right: 1rem;
+      }
+  
+    }
+    &:nth-child(4n){
+      @media screen and (min-width: 600px){
+        border-left: 1px solid #59EFF1;
+        border-bottom: 0;
+        padding-left: 1rem;
+      }
+    }
+  
+  
+  }
+  
+ 
+  /* end of schedules */
