@@ -1019,7 +1019,7 @@ textarea {
 
 /* stack columns on small screen devices
  */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .row .row {
         margin-left  : 0;
         margin-right : 0;
@@ -1238,19 +1238,26 @@ a:active {
 /* headings
  */
 h1,
-h2,
+h2{
+    font-family            : 'Montserrat', sans-serif;
+    font-weight            : 800;
+}
 h3,
 h4,
 h5,
 h6,
 .h1,
-.h2,
+.h2
+{
+    font-family            : 'Montserrat', sans-serif;
+    font-weight            : 800;
+}
 .h3,
 .h4,
 .h5,
 .h6 {
-    font-family            : var(--font-1);
-    font-weight            : 500;
+    font-family            : 'Montserrat', sans-serif;
+    font-weight            : 800;
     color                  : var(--color-text-dark);
     font-variant-ligatures : common-ligatures;
     text-rendering         : optimizeLegibility;
@@ -3029,6 +3036,7 @@ img.u-pull-left {
     font-weight : 500;
     color       : rgba(255, 255, 255, 0.5);
     margin-bottom  : var(--vspace-1);
+    margin-left  : 5em;
 }
 
 .s-intro__content-title {
@@ -3037,6 +3045,7 @@ img.u-pull-left {
     line-height   : var(--vspace-1_5);
     color         : white;
     margin-top    : 0;
+    display   : flex;
     margin-bottom : var(--vspace-0_25);
 }
 
@@ -3288,10 +3297,21 @@ div{
     }
 
     .s-intro .counter__time {
-        font-size : 9.6rem;
+        font-size : 6rem;
+     
+    }
+    .s-intro .counter__time span:last-child {
+        font-weight : 8 00;
+        font-size   : 0.3em;
+        color       : rgba(255, 255, 255, 0.35);
+        transform   : translate(0.2em, 0.8em);
+    }
+    .s-intro .counter {
+        margin-left: 2em;
     }
 
     .s-intro__content-bottom {
+        margin-left: 2em;
         max-width : 400px;
     }
 
@@ -3311,13 +3331,13 @@ div{
 
 @media screen and (max-width: 500px) {
     .s-intro .counter__time {
-        font-size : 7.2rem;
+        font-size : 4rem;
     }
 }
 
 @media screen and (max-width: 400px) {
     .s-intro .counter__time {
-        font-size : 6.6rem;
+        font-size : 4rem;
     }
 
     .s-intro__content-title {

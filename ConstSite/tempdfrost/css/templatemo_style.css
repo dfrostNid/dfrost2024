@@ -15,23 +15,12 @@ body {
     -webkit-font-smoothing: antialiased;
  /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
-    background: #ffffff;
+    background: #000000;
 }
 
 a, a:hover, a:focus {
     text-decoration: none;
     color: #06327d;
-}
-
-h1, h2, h3, h4, h5, h6 {
-     /* font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif; */
-}
-
-h1 {
-    width: 100%;
-    font-size: 36px;
-    color: #747474;
-    text-align: center;
 }
 
 .clear {
@@ -433,7 +422,7 @@ h1 {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #00006c;
+    color: #050533;
     font-weight: bold;
     letter-spacing: 0.2ch;
     border-top: 1px solid #00006c;
@@ -517,19 +506,12 @@ h1 {
 }
 
 @media (min-width: 340px) and (max-width:767px) {
-    .templatemo_pricing_table {
-        width: 310px;
-        margin: 15px auto;
-    }
+    /* .templatemo_menu{
+       
+        background: url(../images/navphone.png); 
+       
 
-    .templatemo_pricing_box {
-        margin-top: 80px;
-    }
-
-    .templatemo_pricing_box span.month {
-        float: left;
-        padding: 20px 0px 0px 10px;
-    }
+    } */
 }
 
 @media (min-width: 360px) and (max-width:640px) {
