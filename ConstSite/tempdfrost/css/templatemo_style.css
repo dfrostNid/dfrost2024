@@ -364,17 +364,6 @@ a, a:hover, a:focus {
     margin: 30px;
 }
 
-.templatemo_contactform input, textarea {
-    width: 90%;
-    background: #282828;
-    border: 1px solid #393939;
-    padding: 7px 10px;
-    margin: 0px 0px 10px 0px;
-}
-
-.templatemo_contactform textarea {
-    height: 220px;
-}
 
 .templatemo_sendbtn {
     background: #91bf24;
@@ -405,17 +394,7 @@ a, a:hover, a:focus {
     vertical-align: top;
 }
 
-.templatemo_contactform .btn-primary {
-    background: #822380;
-    border: none;
-    border-radius: 0px;
-    color: #3d5602;
-    font-weight: 700;
-}
 
-.templatemo_contactform .btn-primary:hover {
-    background: #a6d82c;
-}
 
 #templatemo_service_page, #templatemo_promotion_page, #templatemo_work_page, templatemo_contact_page {
     margin-top: 50px;
