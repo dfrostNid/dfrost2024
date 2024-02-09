@@ -408,7 +408,7 @@ a, a:hover, a:focus {
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    background: #822380;
+    background: #B96ABA;
     color: #2FEBED;
 }
 
@@ -421,8 +421,8 @@ a, a:hover, a:focus {
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
-    background: #467200;
-    color: #ccff00;
+    background: #570059;
+    color: #2FEBED;
 }
 
 /*------------------------------------------------------
@@ -580,9 +580,11 @@ a, a:hover, a:focus {
 
 @media (max-width: 767px) {
     #top-menu {
-        background:#822380;
-        margin: 0px -15px 0px 0px;
-        opacity: 0.9;
+        width: 90%;
+        background:#9BADCB;
+        float: right;
+        margin: 0px -15px 0px 0px; 
+        /* opacity: 0.9; */
     }
 }
 
