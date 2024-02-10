@@ -4228,3 +4228,16 @@ div{
   -webkit-text-stroke-color: rgb(42, 113, 170);
 
   }
+
+
+  /* CONTACT US SECTION */
+  .contact_text{
+    position:relative;
+    padding:0;
+    margin-top: -10px;
+   
+  }
+
+  .contact_heading{
+    color:#06327D;
+  }
