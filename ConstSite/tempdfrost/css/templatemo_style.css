@@ -15,7 +15,10 @@ body {
     -webkit-font-smoothing: antialiased;
  /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
-    background: #000000;
+    /* background: #000000; */
+    background: url(../images/bkgimg.png);
+    background-repeat: repeat-y;
+    background-color: #0F0010;
 }
 
 a, a:hover, a:focus {
@@ -288,24 +291,7 @@ a, a:hover, a:focus {
     font-size: 46px;
 }
 
-.templatemo_pricing_box span.month {
-    float: left;
-    padding: 10px 0px 0px 10px;
-}
 
-.templatemo_pricing_list ul {
-    margin: 0px 15px;
-    list-style: none;
-    padding: 0px 20px;
-}
-
-.templatemo_pricing_list ul li {
-    background: url(../images/templatemo_arrow.png) no-repeat;
-    background-position: left top;
-    margin: 0px;
-    padding: 7px 30px;
-    border-bottom: 1px solid #e0e0e0;
-}
 
 .templatemo_signup {
 	display: block;
@@ -408,7 +394,7 @@ a, a:hover, a:focus {
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    background: #B96ABA;
+    background: #570059;
     color: #2FEBED;
 }
 
@@ -489,8 +475,13 @@ a, a:hover, a:focus {
        
         background: url(../images/navphone.png); 
        
-
     }
+    body{
+        background: url(../images/phonebkg.png);
+        background-color: #0F0010;
+        background-repeat: repeat-y;
+    }
+    
 }
 
 @media (min-width: 360px) and (max-width:640px) {

@@ -239,7 +239,7 @@ html {
 }
 
 body {
-    /* background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif); */
+    /* background-image: url(images); */
     margin : 0;
 }
 
@@ -250,6 +250,9 @@ main {
 h1 {
     font-size : 2em;
     margin    : 0.67em 0;
+
+/* Will override color (regardless of order) */
+ 
 }
 
 hr {
@@ -3766,90 +3769,84 @@ div{
 
   /* contact page end */
   /* for schedules */
-  *{
+ 
+ /* (A) CONTAINER & SHARED */
+.vtl, .vtl * {
+    font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
   }
+  .vtl {
+    padding-left: 50px; /* "reserve space" for vertical line */
+    max-width: 500px; /* optional */
+  }
+  .vtl, .event { position: relative; } /* required for absolute position to work properly */
+  .vtl::before, .event::before, .event::after { position: absolute; }
   
+  /* (B) VERTICAL LINE */
+  .vtl::before {
+    /* (B1) DRAW VERTICAL LINE */
+    content: ""; width: 5px;
+    background: #a9a9a9;
   
-  
-  
-  
-  .timeline{
-    padding: 2rem;
-    max-width: 1400px;
-    margin: auto;
-  
+    /* (B2) POSITION TO THE LEFT */
+    top: 0; bottom: 0; left: 15px;
   }
   
+  /* (C) EVENTS */
+  .event {
+    padding: 20px; margin-bottom: 10px; border-radius: 5px;
+    background: #6A84B1;
+  }
+  .event p {
+    padding: 0; margin: 0;
+    color: #fff;
+  }
+  p.date { font-size: 1.1em; font-weight: 700; }
+  p.txt { font-size: 0.9em; }
   
-  .grid-wrapper{
+  /* (D) CIRCLE ON VERTICAL LINE */
+  .event::after {
+    /* (D1) DRAW CIRCLE */
+    content: ""; width: 16px; height: 16px; border-radius: 50%;
+    border: 4px solid #6A84B1;
+    background: #fff;
   
-   
-    @media screen and (min-width: 600px){
-      display: grid;
-      grid-auto-flow: column;
-      grid-gap: 1rem;
-     
-    }
-  
-    @media screen and (min-width: 1025px){
-      grid-template-columns: 1fr 2fr 1fr 2fr;
-    }
-    @media screen and (min-width: 600px) and (max-width: 1024px){
-      grid-template-columns: 1fr 2fr;
-    }
-  
+    /* (D2) POSITION ON VERTICAL LINE */
+    top: 20%; left: -44px;
   }
   
-  article{
-    p{
-      font-family: 'Karla', sans-serif;
-      font-size: 0.95rem;
-      color: #c8c8c8;
-    }
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #59EFF1;
+  /* (E) EVENT "SPEECH BUBBLE CALLOUT" */
+  .event::before {
+    /* (E1) DRAW TRIANGLE */
+    content: "";
+    border: 10px solid transparent; 
+    border-right-color: #9BADCB;
+    border-left: 0;
   
-  
-   
-  
-    &:nth-child(4){
-      grid-area: 1/2/4/3;   
-    }
-  
-    &:nth-child(8){
-      @media screen and (min-width: 1025px){
-        grid-area: 1/4/4/-1;
-      }
-      @media screen and (min-width: 600px) and (max-width: 1024px){
-        grid-area: 4/2/8/3;
-      }
-    }
-  
-    &:nth-child(4n+3){
-      @media screen and (min-width: 1025px){
-        border-bottom: 0;
-      }   
-    }
-    &:nth-child(4){
-      @media screen and (min-width: 1025px){
-        border-right: 1px solid #59EFF1;
-        padding-right: 1rem;
-      }
-  
-    }
-    &:nth-child(4n){
-      @media screen and (min-width: 600px){
-        border-left: 1px solid #59EFF1;
-        border-bottom: 0;
-        padding-left: 1rem;
-      }
-    }
-  
-  
+    /* (E2) POSITION TO THE LEFT */
+    top: 20%; left: -10px;
   }
   
- 
+  /* (X) DOES NOT MATTER */
+  * { box-sizing: border-box; }
+  
+  #cbwrap {
+    background: rgba(255, 255, 255, 0.9);
+    width: 600px; padding: 20px;
+    border-radius: 10px;
+  }
+  #cbtitle {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  #cbinfo {
+    padding: 10px; margin-top: 40px;
+    font-weight: 700; text-align: center;
+  }
+  #cbinfo a {
+    text-decoration: none; padding: 5px;
+    color: #fff; background: #9BADCB;
+  }
   /* end of schedules */
   /* for sponsors */
   /* marquee div container */
@@ -4112,20 +4109,7 @@ div{
   /*   transition: background-color 100ms linear; */
   }
   
-  /* .neon-button::before {
-    pointer-events: none;
-    content: '';
-    position: absolute;
-    background: var(--clr-neon);
-    top: 120%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
-    filter: blur(1em);
-    opacity: 0.7;
-  } */
+
   
   .neon-button:hover, .neon-button:focus {
   /*   background: var(--clr-neon); */
@@ -4236,3 +4220,11 @@ div{
     z-index: 2;
   }
   /* end of register */
+  .bigfont{
+    text-align: center;
+    font-size: 10vw;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(42, 113, 170);
+
+  }
