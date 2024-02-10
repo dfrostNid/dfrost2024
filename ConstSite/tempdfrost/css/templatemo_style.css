@@ -158,8 +158,10 @@ a, a:hover, a:focus {
 }
 /*.templatemo_service img:hover{ box-shadow: inset 0 0 0 30000px rgba(93,123,13, 0.8)}*/
 .templatemo_service_frame {
+    
     position: absolute;
-    top: 0;
+    
+   
 }
 
 .templatemo_service_frame img {
@@ -449,7 +451,7 @@ a, a:hover, a:focus {
 }
 
 .gallery-item .overlay a {
-    color: #06327d;
+    color: #00B8BA;
     text-align: center;
     line-height: 32px;
     position: absolute;
