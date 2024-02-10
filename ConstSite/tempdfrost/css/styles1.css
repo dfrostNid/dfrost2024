@@ -3420,7 +3420,7 @@ div{
 .tab-nav__list li {
     flex             : 1;
     padding-left     : 0;
-    background-color : rgba(255, 255, 255, 0.3);
+    background-color : rgba(114, 47, 47, 0.3);
     border-width     : 1px;
     border-style     : solid solid none solid;
     border-color     : var(--color-text);
@@ -3444,7 +3444,7 @@ div{
 }
 
 .tab-nav__list a[data-tab-active] {
-    color   : white;
+    color   : rgb(199, 54, 54);
     outline : 0;
 }
 
