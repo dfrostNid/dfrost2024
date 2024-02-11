@@ -4221,7 +4221,8 @@ div{
   }
   /* end of register */
   .bigfont{
-    text-align: center;
+    text-align: left;
+    padding-left: 15px;
     font-size: 10vw;
     -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1.5px;

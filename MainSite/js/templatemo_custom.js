@@ -19,7 +19,6 @@ jQuery(document).ready(function($){
 	  }
 	);
 
-
 	/************** LightBox *********************/
 	$(function(){
 		$('[data-rel="lightbox"]').lightbox();
@@ -94,10 +93,7 @@ $(window).scroll(function(){
          .end().filter("[href=#"+id+"]").parent().addClass("active");
    }                   
 });
-
-
 }
-
 
 function initialize() {
     var mapOptions = {
