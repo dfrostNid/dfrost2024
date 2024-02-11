@@ -4228,17 +4228,24 @@ div{
   -webkit-text-stroke-color: rgb(42, 113, 170);
 
   }
-   /* CONTACT US SECTION */
+   /* COMPETITIONS */
 
   .gallery_item_img{
         position:absolute;
         left:100px;
         
   }
+  .gallery_item_img2{
+    position:absolute;
+    transform: translate(170%);
+    
+}
 
   .gallery_item_text{
     position:absolute;
-    right:-200px;
+    right:-400px;
+    font-family: 'Montserrat', sans-serif;
+    /*-webkit-text-stroke-color: rgb(42, 113, 170);*/
     /*bottom:40px;*/
   }
 
