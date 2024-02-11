@@ -96,16 +96,16 @@
 
   /* Swiper
    * ------------------------------------------------------ */
-  const ssSwiper = function () {
-    const mySwiper = new Swiper(".swiper-container", {
-      slidesPerView: 1,
-      effect: "fade",
-      speed: 2000,
-      autoplay: {
-        delay: 5000,
-      },
-    });
-  };
+  // const ssSwiper = function () {
+  //   const mySwiper = new Swiper(".swiper-container", {
+  //     slidesPerView: 1,
+  //     effect: "fade",
+  //     speed: 2000,
+  //     autoplay: {
+  //       delay: 5000,
+  //     },
+  //   });
+  // };
 
   /* MailChimp Form
    * ---------------------------------------------------- */
@@ -481,7 +481,7 @@
   (function ssInit() {
     ssPreloader();
     ssCountdown();
-    ssSwiper();
+    //ssSwiper();
     ssMailChimpForm();
     sstabs();
     ssAlertBoxes();

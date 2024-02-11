@@ -122,8 +122,7 @@ function loadScript() {
           'callback=initialize';
       document.body.appendChild(script);
       
-      
-      <!-- scroll to specific id when click on menu -->
+      //  scroll to specific id when click on menu
              // Cache selectors
     
       var lastId,
