@@ -4270,3 +4270,22 @@ div{
   .contact_heading{
     color:#9BADCB;
   }
+  /* two column static grid */
+  /* container */
+.two-columns-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* display: flex; */
+    
+}
+
+/* columns */
+.two-columns-grid > * {
+    padding:1rem;
+    border-bottom : 1px solid #00E1F2;
+    display: flex;
+  /* align-items: flex-end; */
+  justify-content: center;
+    
+}
+/* over  */
