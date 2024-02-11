@@ -3362,7 +3362,7 @@ div{
  * ------------------------------------------------------------------- */
 .s-info {
     /* padding-top    : var(--vspace-5); */
-    padding-bottom : var(--vspace-4);
+    padding-bottom : var(--vspace-2);
     width          : 100%;
     position       : relative;
 }
@@ -3607,9 +3607,9 @@ div{
 }
 
 .s-footer__bottom {
-    margin-top  : var(--vspace-1);
+    margin-top  : -20px;
     padding-top : var(--vspace-0_5);
-    border-top  : 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom  : 1px solid rgba(255, 255, 255, 0.05);
     position    : relative;
 }
 
