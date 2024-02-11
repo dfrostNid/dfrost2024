@@ -4352,3 +4352,17 @@ div{
     opacity: 1;
   }
   /* glow button2 end */
+  /* for logos */
+  .logoforphone{
+    display: none;
+  }
+  @media screen and (max-width: 700px){
+   
+    .logoforphone{
+        display: inline-block;
+      }
+      .logoforpc{
+        display: none;
+      }
+  }
+  
