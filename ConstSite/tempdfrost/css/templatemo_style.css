@@ -206,7 +206,7 @@ a, a:hover, a:focus {
     font-family: 'Montserrat', sans-serif;
     -webkit-text-stroke-color: rgb(42, 113, 170);
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-size: 35px;
     color:#00B8BA;
     font-weight: bold;
@@ -220,12 +220,12 @@ a, a:hover, a:focus {
 
     font-size: 20px;
     font-weight: 80 ;
-    text-align: center;
+    text-align: left;
 }
 
 .templatemo_service_text {
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-family : monospace, monospace;
 }
 
@@ -577,7 +577,7 @@ a, a:hover, a:focus {
     }
 
     .templatemo_service_title {
-        margin-top: 0px;
+        margin-top:-70px;
     }
 }
 
