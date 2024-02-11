@@ -4237,13 +4237,21 @@ div{
   }
   .gallery_item_img2{
     position:absolute;
-    transform: translate(170%);
+    transform: translate(140%);
     
 }
 
   .gallery_item_text{
     position:absolute;
     right:-400px;
+    font-family: 'Montserrat', sans-serif;
+    /*-webkit-text-stroke-color: rgb(42, 113, 170);*/
+    /*bottom:40px;*/
+  }
+
+  .gallery_item_text2{
+    position:absolute;
+    transform: translate(15%);
     font-family: 'Montserrat', sans-serif;
     /*-webkit-text-stroke-color: rgb(42, 113, 170);*/
     /*bottom:40px;*/
