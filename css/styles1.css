@@ -4098,8 +4098,8 @@ div{
   
   .neon-button {
     font-size: 3rem;
-    /* color: var(--clr-neon); */
-    color: var( --clr-disabled);
+    color: var(--clr-neon);
+    /* color: var( --clr-disabled); */
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
