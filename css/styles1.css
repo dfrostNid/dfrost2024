@@ -3295,7 +3295,7 @@ div{
 
 @media screen and (max-width: 800px) {
     .s-intro .counter__time {
-        font-size : 10.4rem;
+        font-size : 6.4rem;
     }
 }
 
@@ -3345,7 +3345,7 @@ div{
 
 @media screen and (max-width: 400px) {
     .s-intro .counter__time {
-        font-size : 4rem;
+        font-size : 3.5rem;
     }
 
     .s-intro__content-title {
