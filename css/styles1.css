@@ -3034,7 +3034,7 @@ img.u-pull-left {
     align-items    : flex-end;
     height         : 100vh;
     min-height     : calc(25.5 * var(--space));
-    padding-top    : 20vh;
+    padding-top    : 10vh;
     padding-bottom : 8.8rem;
     position       : relative;
 }
