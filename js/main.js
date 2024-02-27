@@ -3,7 +3,7 @@
 
   const cfg = {
     // Countdown Timer Final Date
-    finalDate: "March 8, 2024 09:00:00",
+    finalDate: "March 8, 2024 11:00:00",
   };
 
   /* Preloader
@@ -74,7 +74,7 @@
 
       if (days <= 99) {
         if (days <= 9) {
-          days = "00" + days;
+          days = "0" + days;
         } else {
           days = days;
         }
