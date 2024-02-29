@@ -3777,11 +3777,12 @@ div{
  
  /* (A) CONTAINER & SHARED */
 .vtl, .vtl * {
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family:'Calibri', monospace; */
+    font-family:'Courier New'  ;
     box-sizing: border-box;
   }
   .vtl {
-    padding-left: 50px; /* "reserve space" for vertical line */
+    padding-left: 50px; /* "reserve space" for vertical line  'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 'Courier New', Courier,* /
     max-width: 500px; /* optional */
   }
   .vtl, .event { position: relative; } /* required for absolute position to work properly */
@@ -4031,7 +4032,7 @@ div{
   .slider .card{
     flex: 1;
     margin: 0 10px;
-    background: #fff;
+    background:#020202;
     border-radius: 15px;
   }
   .slider .card .img{
@@ -4050,6 +4051,8 @@ div{
   .card .content .title{
     font-size: 25px;
     font-weight: 600;
+    color: aliceblue;
+    margin-top: 0.3em;
   }
   .card .content .sub-title{
     font-size: 20px;
