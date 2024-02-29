@@ -3790,8 +3790,8 @@ div{
   /* (B) VERTICAL LINE */
   .vtl::before {
     /* (B1) DRAW VERTICAL LINE */
-    content: ""; width: 5px;
-    background: #a9a9a9;
+    content: ""; width: 3px;
+    background: #00E1F2;
   
     /* (B2) POSITION TO THE LEFT */
     top: 0; bottom: 0; left: 15px;
@@ -3800,24 +3800,24 @@ div{
   /* (C) EVENTS */
   .event {
     padding: 20px; margin-bottom: 10px; border-radius: 5px;
-    background: #6A84B1;
+    /* background:; */
   }
   .event p {
     padding: 0; margin: 0;
     color: #fff;
   }
-  p.date { font-size: 1.1em; font-weight: 700; }
+  p.date { font-size: 1.1em; font-weight: 700; margin-top: -0.2em; margin-bottom: 0.3em; }
   p.txt { font-size: 0.9em; }
   
   /* (D) CIRCLE ON VERTICAL LINE */
   .event::after {
     /* (D1) DRAW CIRCLE */
     content: ""; width: 16px; height: 16px; border-radius: 50%;
-    border: 4px solid #6A84B1;
-    background: #fff;
+    border: 4px solid #00E1F2;
+    background:#020202;
   
     /* (D2) POSITION ON VERTICAL LINE */
-    top: 20%; left: -44px;
+    top: 20%; left: -42px;
   }
   
   /* (E) EVENT "SPEECH BUBBLE CALLOUT" */
@@ -3825,7 +3825,7 @@ div{
     /* (E1) DRAW TRIANGLE */
     content: "";
     border: 10px solid transparent; 
-    border-right-color: #9BADCB;
+    border-right-color: aliceblue   ;
     border-left: 0;
   
     /* (E2) POSITION TO THE LEFT */
@@ -4228,9 +4228,10 @@ div{
     text-align: left;
     padding-left: 15px;
     font-size: 10vw;
+    margin-top: 1em;
     -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: rgb(42, 113, 170);
+  -webkit-text-stroke-color:#00E1F2;
 
   }
    /* COMPETITIONS */
