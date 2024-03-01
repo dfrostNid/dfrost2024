@@ -3860,13 +3860,13 @@ div{
     font-size: 2vw;
     color: #000000;
     font-family: 'Courier New', Courier, monospace;
-    height: 25vw;
+    height: 22VW;
     overflow: hidden;
     background-color: #ffffff;
     position: relative;
 }
 /* nested div inside the container */
-.marquee div {
+ .marquee div {
     display: block;
     width: 200%;
     position: absolute; 
@@ -3875,14 +3875,14 @@ div{
 }
 /* span with text */
 .marquee span {
-    float: left;
-    width: 50%;
+    /* float: left; */
+    width: 100%;
 }
-/* keyframe */
+
 @keyframes marquee {
     0% { left: 0; }
-    100% { left: -100%; }
-}
+    100% { left: -90%; }
+} 
   /* end of sponsors */
   /* for about section */
   
