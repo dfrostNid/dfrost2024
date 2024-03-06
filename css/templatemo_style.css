@@ -64,7 +64,7 @@ a, a:hover, a:focus {
     top: 0px;
     width: 80%;
     /* NAV_BAR */
-    background: url(../images/dfrost_nav.png); 
+    background: url(../images/navnew.png); 
     height: 70px;
     z-index: 500;
     
@@ -485,7 +485,7 @@ a, a:hover, a:focus {
 @media (min-width: 340px) and (max-width:767px) {
     .templatemo_menu{
        
-        background: url(../images/navphone.png); 
+        background: url(../images/navnewphone.png); 
        
     }
     body{
