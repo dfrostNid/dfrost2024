@@ -799,6 +799,7 @@ textarea {
     .hide-on-md {
         display : none;
     }
+  
 }
 
 /* --------------------------------------------------------------------
@@ -3377,8 +3378,8 @@ div{
 }
 
 .s-info h2 {
-    margin-top    : 0;
-    margin-bottom : var(--vspace-1_25);
+    margin-top    : 2em;
+    /* margin-bottom : var(--vspace-1_25); */
 }
 
 /* --------------------------------------------------------------------
@@ -3856,6 +3857,7 @@ div{
   /* end of schedules */
   /* for sponsors */
   /* marquee div container */
+  
 .marquee {
     font-size: 2vw;
     color: #000000;
@@ -4036,7 +4038,7 @@ div{
     border-radius: 15px;
   }
   .slider .card .img{
-    height: 360px;
+    /* height: 360px; */
     width: 100%;
   }
   .slider .card .img img{

@@ -59,9 +59,10 @@
     width: 100%
 }
 
-.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-dots,
 .owl-carousel .owl-nav.disabled {
-    display: none
+    display: none;
+    margin-bottom: -2em;
 }
 
 .no-js .owl-carousel,
